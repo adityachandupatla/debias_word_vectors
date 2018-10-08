@@ -1,5 +1,5 @@
 # Debiasing word vectors
-<p><a href="https://en.wikipedia.org/wiki/GloVe_(machine_learning)">GloVe word embeddings</a> are explored for gender bias and subsequently a debiasing operation is performed on the word vectors to eliminate the bias. Since word embeddings are very computationally expensive to train, we will load a 50-dimensional <a href="https://nlp.stanford.edu/projects/glove/">pre-trained GloVe vectors</a> to represent word embeddings. This project is implemented as part of the <a href="https://github.com/adityachandupatla/ML_Coursera">deeplearning specialization</a> from Coursera.</p>
+<p><a href="https://en.wikipedia.org/wiki/GloVe_(machine_learning)">GloVe word embeddings</a> are explored for gender bias and subsequently a debiasing operation is performed on the word vectors to eliminate the bias. Since word embeddings are very computationally expensive to train, we will load a 50-dimensional <a href="https://nlp.stanford.edu/projects/glove/">pre-trained GloVe vectors</a> to represent word embeddings. This project is implemented as part of the <a href="https://github.com/adityachandupatla/deeplearning_coursera">deeplearning specialization</a> from Coursera.</p>
 <h2>Running the Project</h2>
 <ul>
   <li>Make sure you have Python3 installed</li>
