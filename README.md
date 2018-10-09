@@ -31,9 +31,9 @@ This project is developed to showcase my following programming abilities:
   </ul>
 </p>
 
-<p>We will be using <a href="https://en.wikipedia.org/wiki/Cosine_similarity">Cosine similarity</a> to measure how similar two words are. We need a way to measure the degree of similarity between two embedding vectors for the two words. Given two vectors  u  and  v , the following diagram illustrates cosine similarity:<br/><br/><img src="https://github.com/adityachandupatla/debias_word_vectors/blob/master/images/cosine_sim.png" /></p>
+<p>We will be using <a href="https://en.wikipedia.org/wiki/Cosine_similarity">Cosine similarity</a> to measure how similar two words are.</p>
 
-<p>Now we will examine gender biases that can be reflected in a word embedding. We will first compute a vector g = e_woman − e_man , where  e_woman  represents the word vector corresponding to the word woman, and  e_man corresponds to the word vector corresponding to the word man. The resulting vector g roughly encodes the concept of "gender". After running the application you will see, the astonishing results, which show us how biased these word vectors are in reflecting unhealthy gender stereotypes. For example, "computer" is closer to "man" while "literature" is closer to "woman".</p><br/>
+<p>We will first examine gender biases that can be reflected in a word embedding. We will first compute a vector g = e_woman − e_man , where  e_woman  represents the word vector corresponding to the word woman, and  e_man corresponds to the word vector corresponding to the word man. The resulting vector g roughly encodes the concept of "gender". After running the application you will see, the astonishing results, which show us how biased these word vectors are in reflecting unhealthy gender stereotypes. For example, "computer" is closer to "man" while "literature" is closer to "woman".</p><br/>
 
 <p><b>Neutralize bias for non-gender specific words</b>: We'll use an algorithm by <a href="https://arxiv.org/abs/1607.06520">Boliukbasi et al., 2016</a> to perform gender debiasing. Note that some word pairs such as "actor"/"actress" or "grandmother"/"grandfather" should remain gender specific, while other words such as "receptionist" or "technology" should be neutralized, i.e. not be gender-related.</p><br/>
 
@@ -41,7 +41,7 @@ This project is developed to showcase my following programming abilities:
 
 <h2>TODO</h2>
 <ul>
-  <li>These debiasing algorithms are very helpful for reducing bias, but are not perfect and do not eliminate all traces of bias. One weakness of this implementation was that the bias direction 'g' was defined using only the pair of words woman and man. If 'g' were defined by computing g1 = e_woman − e_man ;  g2 = e_mother − e_father ;  g3 = e_girl − e_boy ; and so on and averaging over them, we would have obtained a better estimate of the "gender" dimension.</li>
+  <li>These debiasing algorithms are very helpful for reducing bias, but are not perfect and do not eliminate all traces of bias. One weakness of this implementation was that the bias direction 'g' was defined using only the pair of words {"woman" and "man"}. If 'g' were defined by computing g1 = e_woman − e_man ;  g2 = e_mother − e_father ;  g3 = e_girl − e_boy ; and so on and averaging over them, we would have obtained a better estimate of the "gender" dimension.</li>
 </ul><br/>
 Use this, report bugs, raise issues and Have fun. Do whatever you want! I would love to hear your feedback :)
 
